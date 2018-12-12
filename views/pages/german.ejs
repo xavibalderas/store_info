@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <% include ../partials/header.ejs %>
+</head>
+
+<body>
+
+<div id="main">
+  <div id="general" class="slide">
+    <img src="/images/de/general.png" usemap="#head_map">
+  </div>
+  <div id="apps" class="slide">
+    <img src="/images/de/apps.png" usemap="#head_map">
+  </div>
+  <div id="customer" class="slide">
+    <img src="/images/de/customer_service.png" usemap="#head_map">
+  </div>
+  <div id="services" class="slide">
+    <img src="/images/de/services.png" usemap="#head_map">
+  </div>
+
+</div>
+<map name="head_map">
+  <area shape="rect" coords="117,600,421,680"  onclick="slide('general')" href="#" alt="General">
+  <area shape="rect" coords="550,600,718,680"  onclick="slide('apps')" href="#" alt="Apps">
+  <area shape="rect" coords="854,600,1330,680"  onclick="slide('customer')" href="#" alt="Customer">
+  <area shape="rect" coords="1462,600,2041,680"  onclick="slide('services')" href="#" alt="Services">
+</map>
+
+</body>
+</html>
